@@ -6,6 +6,8 @@ public class Basketball {
 	int number;
 	int score;
 	double shootRatio;
+	int shoottry;
+	int shootsuccess;
 	
 	//생성자
 	public Basketball() {
@@ -20,11 +22,14 @@ public class Basketball {
 
 	public void initBasketball() {
 		score = 20;
-		shootRatio = 40;
+		shoottry = 10;
+		shootsuccess = 5;
 	}
 	
 	public double shootRatio(int shoottry, int shootsuccess) {
-		return shootRatio = (shoottry / shootsuccess) / 100;
+		shootRatio = (shootsuccess / shoottry) * 100;
+		return shootRatio(shoottry, shootsuccess);
+		
 	}
 	
 	public String PlayerInfo() {

@@ -21,22 +21,48 @@ public class BasketballExample {
 		playerList.add(player3);
 		playerList.add(player4);
 		
+		showAllPlayer();
+		
+		Basketball basketball = findPlayer(15);
+		
+		//등번호로 선수정보 출력
+		
+		if (basketball == null) {
+			System.out.println(" ");
+			System.out.println("존재하지 않는 선수입니다.");
+		} else {			
+			playerScore(basketball, 0); 
+			}
+	}
+
+	private static Basketball findPlayer(int number) {
+		Basketball basketballPlayer = null;
+		for( Basketball basketball : playerList){
+			if (basketball.getNumber() == number) {
+				basketballPlayer = basketball;
+				break;
+			}
+		}
+		
+		return basketballPlayer;
+	}
+
+	//모든 선수정보 출력
+	private static void showAllPlayer() {
+		System.out.println("============선수 목록==============");
+		
 		for(Basketball basketball : playerList) {
 			System.out.println(basketball.PlayerInfo());
 		}
 		
-		//showAllPlayer();
 		
-		//모든 선수정보 출력
-		/*public static void showAllPlayer() {
-			System.out.println("============선수 목록==============");
-			
-			for(Basketball basketball : playerList) {
-				System.out.println(basketball.PlayerInfo());
-			}
-		}*/
-		
-		//등번호로 선수정보 출력
 	}
+		
+		public static void playerScore(Basketball basketball, int shootRatio) {
+			System.out.println("====== 해당 선수의 득점율=======");
+			System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio + "%");
+		}
 
+	
+	
 }
