@@ -9,13 +9,13 @@ public class AbstractMethodExample {
 		Cat cat = new Cat();
 		cat.sound();
 		
-		animalSound(new Dog());
+		animalSound(new Dog()); //자동타입변환
 		animalSound(new Cat());
 	}
 	
 	//메소드 매개변수를 이용한 다형성 구현
 	public static void animalSound(Animal animal) {
-		animal.sound();
+		animal.sound(); //오버라이드된 메소드 출력
 	}
 
 }
