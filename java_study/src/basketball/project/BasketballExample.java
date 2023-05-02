@@ -58,9 +58,9 @@ public class BasketballExample {
 		
 	}
 		
-		public static void playerScore(Basketball basketball, int shootRatio) {
-			System.out.println("====== 해당 선수의 득점율=======");
-			System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio + "%");
+	public static void playerScore(Basketball basketball, int shootRatio) {
+		System.out.println("====== 해당 선수의 득점율=======");
+		System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio + "%");
 		}
 
 	

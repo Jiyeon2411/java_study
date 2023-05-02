@@ -7,7 +7,7 @@ public class ShootingGuard extends Basketball {
 	public ShootingGuard(String name, int number) {
 		super(name, number);
 		super.score = 50;
-		
+		super.position = "ShootingGuard";
 		super.shoottry = 10;
 		super.shootsuccess = 7;
 	}

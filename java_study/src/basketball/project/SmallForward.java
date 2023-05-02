@@ -7,7 +7,7 @@ public class SmallForward extends Basketball {
 	public SmallForward(String name, int number) {
 		super(name, number);
 		super.score = 60;
-		
+		super.position = "SmallForward";
 		super.shoottry = 10;
 		super.shootsuccess = 9;
 	}

@@ -3,6 +3,7 @@ package basketball.project;
 public class Basketball {
 	//필드
 	String name;
+	String position;
 	int number;
 	int score;
 	double shootRatio;
@@ -21,6 +22,7 @@ public class Basketball {
 	}
 
 	public void initBasketball() {
+		position = "Center";
 		score = 20;
 		shoottry = 10;
 		shootsuccess = 5;
@@ -33,7 +35,7 @@ public class Basketball {
 	}
 	
 	public String PlayerInfo() {
-		return name + "의 득점 점수: " + score + ", 득점 비율: " + shootRatio + "%";
+		return position +  name + "의 득점 점수: " + score + ", 득점 비율: " + shootRatio + "%";
 	}
 
 	public String getName() {
