@@ -3,9 +3,9 @@ package customer.project;
 //silver등급 고객에 대한 class
 public class Customer {
 	//필드
-	private int customerID; //고객아이디
-	private String customerName; //고객이름
-	private String customerGrade; //고객등급
+	protected int customerID; //고객아이디
+	protected String customerName; //고객이름
+	protected String customerGrade; //고객등급
 	int bonusPoint; //보너스 포인트 점수(적립 포인트)
 	double bonusRatio; //보너스 비율
 	
@@ -42,7 +42,7 @@ public class Customer {
 	}
 
 	public int getCustomerID() {
-		return customerID;
+		return customerID; 
 	}
 
 	public void setCustomerID(int customerID) {
