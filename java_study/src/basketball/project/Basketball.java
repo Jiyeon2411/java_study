@@ -29,13 +29,13 @@ public class Basketball {
 	}
 	
 	public double shootRatio(int shoottry, int shootsuccess) {
-		shootRatio = (shootsuccess / shoottry) * 100;
-		return shootRatio(shoottry, shootsuccess);
+		shootRatio = (shoottry / shootsuccess) * 100;
+		return shootRatio;
 		
 	}
 	
 	public String PlayerInfo() {
-		return position + " " + name + "의 득점 점수: " + score + ", 득점 비율: " + shootRatio + "%";
+		return position + " " + name + "의 득점 점수: " + score;
 	}
 
 	public String getName() {

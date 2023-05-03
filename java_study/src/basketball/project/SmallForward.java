@@ -14,6 +14,6 @@ public class SmallForward extends Basketball {
 
 	@Override
 	public double shootRatio(int shoottry, int shootsuccess) {
-		return shootRatio = (shootsuccess / shoottry) * 100;
+		return shootRatio = (shoottry / shootsuccess) * 100;
 	}
 }

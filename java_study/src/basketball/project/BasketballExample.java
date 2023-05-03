@@ -26,7 +26,6 @@ public class BasketballExample {
 		Basketball basketball = findPlayer(15);
 		
 		//등번호로 선수정보 출력
-		
 		if (basketball == null) {
 			System.out.println(" ");
 			System.out.println("존재하지 않는 선수입니다.");
@@ -55,14 +54,12 @@ public class BasketballExample {
 			System.out.println(basketball.PlayerInfo());
 		}
 		
-		
 	}
 		
 	public static void playerScore(Basketball basketball, int shootRatio) {
-		System.out.println("====== 해당 선수의 득점율=======");
-		System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio + "%");
+		double shootRatio2 = basketball.shootRatio(10, 5);
+		System.out.println("======해당 선수의 득점율=======");
+		System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio2 + "%");
 		}
-
-	
 	
 }
