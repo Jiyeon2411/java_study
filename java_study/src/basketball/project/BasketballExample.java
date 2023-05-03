@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class BasketballExample {
 
 	private static ArrayList<Basketball> playerList = new ArrayList<>();
+	private static Basketball basketball;
 	
 	public static void main(String[] args) {
 
@@ -62,4 +63,8 @@ public class BasketballExample {
 		System.out.println(basketball.getName() +" 선수의 득점율: " + shootRatio2 + "%");
 		}
 	
+	public static void twopointShoot(int twopointshoot) {
+		System.out.println(basketball.getName() +" 선수의 2점슛: " + twopointshoot + "개");
+	}
+
 }

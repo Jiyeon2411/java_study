@@ -9,6 +9,7 @@ public class Basketball {
 	double shootRatio;
 	int shoottry;
 	int shootsuccess;
+	int twopointshoot;
 	
 	//생성자
 	public Basketball() {
@@ -26,6 +27,7 @@ public class Basketball {
 		score = 20;
 		shoottry = 10;
 		shootsuccess = 5;
+		twopointshoot = 3;
 	}
 	
 	public double shootRatio(int shoottry, int shootsuccess) {

@@ -10,6 +10,7 @@ public class PointGuard extends Basketball {
 		super.position = "PointGuard";
 		super.shoottry = 10;
 		super.shootsuccess = 5;
+		super.twopointshoot = 3;
 	}
 
 	@Override
